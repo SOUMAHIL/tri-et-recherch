@@ -1,0 +1,15 @@
+ALGORITHM tri
+VAR
+    i,j :integer
+    tab: ARRAY_OF integer[length];
+BEGIN
+    FOR i FROM 2 TO lenght-1 STEP step  DO
+        j:=i-1;
+        tab:=t[i];
+        WHILE (J>=1 et t[j]>tab[i]) DO
+             t[j+1]=t[j]
+              j=j-1
+        END_WHILE
+        t[j+1]=tab[i]
+    END_FOR
+ENDgit 
