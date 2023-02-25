@@ -1,0 +1,16 @@
+FUNCTION PALINDROME(tab: ARRAY_OF INTEGER[length];) : INTEGER
+VAR
+    i:INTEGER;
+    motinverse: ARRAY_OF INTEGER[length];
+BEGIN
+    motinverse[length]:=" "
+    FOR i FROM tab.length-1 TO 0 STEP 1  DO
+        motinverse:=motinverse + tab[i]
+    END_FOR
+    FOR i FROM 0 TO tab.length-1 STEP 1 DO
+        IF (motinverse[i] != tab[i] ) THEN
+            RETURN false;
+        END_IF
+    END_FOR
+    RETURN true ;
+END
